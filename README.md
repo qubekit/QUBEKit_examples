@@ -6,7 +6,7 @@ This repository contains examples on how to use QUBEKit from both the command li
 
 ## Demonstration day
 
-This folder contains all of the files used during the Newcastle PGR conference live density prediction demo. We also have a notebook on to recreate the results.
+This folder contains all of the files used during the Newcastle PGR conference live density prediction demo. We also have a notebook on how to recreate the results.
 
 ## Protein examples
 
