@@ -1,0 +1,25 @@
+<input filename>
+UNK_CS.wfx
+</input filename>
+
+<net charge>
+0.0
+</net charge>
+
+<periodicity along A, B and C vectors>
+.false.
+.false.
+.false.
+</periodicity along A, B and C vectors>
+
+<atomic densities directory complete path>
+/home/b6056633/chargemol_09_26_2017/atomic_densities/
+</atomic densities directory complete path>
+
+<charge type>
+DDEC6
+</charge type>
+
+<compute BOs>
+.true.
+</compute BOs>

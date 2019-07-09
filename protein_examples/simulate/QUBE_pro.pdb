@@ -1,0 +1,64 @@
+REMARK   1 CREATED WITH QUBEKit 2019-03-26 16:08:14.807521
+HETATM    1   C1 QUP     1      -1.274   2.338  -2.187  1.00  0.00          C 
+HETATM    2   H2 QUP     1      -1.460   1.497  -2.837  1.00  0.00          H 
+HETATM    3   H3 QUP     1      -0.575   3.023  -2.673  1.00  0.00          H 
+HETATM    4   H4 QUP     1      -2.186   2.880  -1.953  1.00  0.00          H 
+HETATM    5   C5 QUP     1      -0.657   1.876  -0.935  1.00  0.00          C 
+HETATM    6   O6 QUP     1       0.440   2.278  -0.627  1.00  0.00          O 
+HETATM    7   N7 QUP     1      -1.424   1.034  -0.270  1.00  0.00          N 
+HETATM    8   H8 QUP     1      -2.276   0.814  -0.764  1.00  0.00          H 
+HETATM    9   C9 QUP     1      -1.219   0.343   1.054  1.00  0.00          C 
+HETATM   10  H10 QUP     1      -2.149   0.453   1.600  1.00  0.00          H 
+HETATM   11  C11 QUP     1      -1.074  -1.163   0.752  1.00  0.00          C 
+HETATM   12  H12 QUP     1      -0.879  -1.684   1.698  1.00  0.00          H 
+HETATM   13  H13 QUP     1      -2.054  -1.529   0.429  1.00  0.00          H 
+HETATM   14  C14 QUP     1      -0.019  -1.546  -0.276  1.00  0.00          C 
+HETATM   15  H15 QUP     1      -0.260  -1.078  -1.222  1.00  0.00          H 
+HETATM   16  C16 QUP     1      -0.085  -3.047  -0.537  1.00  0.00          C 
+HETATM   17  H17 QUP     1       0.638  -3.327  -1.308  1.00  0.00          H 
+HETATM   18  H18 QUP     1       0.163  -3.615   0.380  1.00  0.00          H 
+HETATM   19  H19 QUP     1      -1.093  -3.350  -0.881  1.00  0.00          H 
+HETATM   20  C20 QUP     1       1.373  -1.129   0.147  1.00  0.00          C 
+HETATM   21  H21 QUP     1       2.104  -1.566  -0.552  1.00  0.00          H 
+HETATM   22  H22 QUP     1       1.468  -0.057   0.099  1.00  0.00          H 
+HETATM   23  H23 QUP     1       1.597  -1.493   1.157  1.00  0.00          H 
+HETATM   24  C24 QUP     1      -0.071   0.913   2.074  1.00  0.00          C 
+HETATM   25  O25 QUP     1       0.040   0.459   3.189  1.00  0.00          O 
+HETATM   26  N26 QUP     1       0.702   1.942   1.724  1.00  0.00          N 
+HETATM   27  H27 QUP     1       0.624   2.190   0.705  1.00  0.00          H 
+HETATM   28  C28 QUP     1       1.656   2.626   2.587  1.00  0.00          C 
+HETATM   29  H29 QUP     1       2.536   2.007   2.725  1.00  0.00          H 
+HETATM   30  H30 QUP     1       1.949   3.565   2.144  1.00  0.00          H 
+HETATM   31  H31 QUP     1       1.215   2.817   3.556  1.00  0.00          H 
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7
+CONECT    6    5
+CONECT    7    5    8    9
+CONECT    8    7
+CONECT    9    7   10   11   24
+CONECT   10    9
+CONECT   11    9   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11   15   16   20
+CONECT   15   14
+CONECT   16   14   17   18   19
+CONECT   17   16
+CONECT   18   16
+CONECT   19   16
+CONECT   20   14   21   22   23
+CONECT   21   20
+CONECT   22   20
+CONECT   23   20
+CONECT   24    9   25   26
+CONECT   25   24
+CONECT   26   24   27   28
+CONECT   27   26
+CONECT   28   26   29   30   31
+CONECT   29   28
+CONECT   30   28
+CONECT   31   28
+END

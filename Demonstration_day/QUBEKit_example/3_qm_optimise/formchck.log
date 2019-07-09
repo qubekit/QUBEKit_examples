@@ -1,0 +1,4 @@
+ Read checkpoint file lig.chk
+ Write formatted file lig.fchk
+ FChkPn:  Coordinates translated and rotated.
+ FChkPn:  Coordinates match /B/ after translation and rotation.

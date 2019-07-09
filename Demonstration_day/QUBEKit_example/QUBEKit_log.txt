@@ -1,0 +1,653 @@
+Beginning log file; the time is: 2019-07-09 13:44:06.370150
+
+
+Analysing: UNK_CS
+
+The runtime defaults and config options are as follows:
+
+theory: B3LYP
+basis: 6-31G*
+vib_scaling: 0.967
+threads: 8
+memory: 4
+convergence: GAU_TIGHT
+iterations: 350
+bonds_engine: g09
+density_engine: g09
+charges_engine: chargemol
+ddec_version: 6
+geometric: True
+solvent: True
+dih_start: -165
+increment: 15
+dih_end: 180
+t_weight: infinity
+opt_method: BFGS
+refinement_method: SP
+tor_limit: 20
+div_index: 0
+parameter_engine: xml
+l_pen: 0.0
+mm_opt_method: openmm
+excited_state: False
+excited_theory: TDA
+nstates: 3
+excited_root: 1
+use_pseudo: False
+pseudo_potential_block: 
+chargemol: /home/b6056633/chargemol_09_26_2017
+log: JH
+filename: UNK_CS.pdb
+name: UNK_CS
+coords: {'qm': [], 'mm': [], 'input': array([[ 1.   ,  1.   ,  0.   ],
+       [-0.804,  1.   ,  0.   ],
+       [ 1.371,  1.   , -1.028],
+       [ 1.371,  0.109,  0.513],
+       [ 1.371,  1.891,  0.513],
+       [-0.956, -0.154, -0.667]]), 'temp': [], 'traj': []}
+topology: 
+angles: [(1, 0, 2), (1, 0, 3), (1, 0, 4), (2, 0, 3), (2, 0, 4), (3, 0, 4), (0, 1, 5)]
+dihedrals: {(0, 1): [(2, 0, 1, 5), (3, 0, 1, 5), (4, 0, 1, 5)]}
+bond_lengths: {(0, 2): 1.0928975249308601, (0, 3): 1.0930192130058831, (0, 4): 1.0930192130058831, (0, 1): 1.804, (1, 5): 1.3415323328194517}
+atoms: [Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 6, 'name': 'C00', 'atom_index': 0, 'mass': 12.011, 'partial_charge': '-0.021450825072964644', 'formal_charge': 0, 'type': 'C', 'bonds': [1, 2, 3, 4], 'element': 'C'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 16, 'name': 'S01', 'atom_index': 1, 'mass': 32.06, 'partial_charge': '-0.18280375938994023', 'formal_charge': 0, 'type': 'S', 'bonds': [0, 5], 'element': 'S'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H02', 'atom_index': 2, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H03', 'atom_index': 3, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H04', 'atom_index': 4, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H05', 'atom_index': 5, 'mass': 1.008, 'partial_charge': '0.10191452354377903', 'formal_charge': 0, 'type': '[H]', 'bonds': [1], 'element': 'H'})]
+dih_phis: {(2, 0, 1, 5): 59.972534328232435, (3, 0, 1, 5): -59.95897751227536, (4, 0, 1, 5): 179.90404616874022}
+angle_values: {(1, 0, 2): 109.84425679645605, (1, 0, 3): 109.84195471596814, (1, 0, 4): 109.84195471596814, (2, 0, 3): 109.0412446681842, (2, 0, 4): 109.0412446681842, (3, 0, 4): 109.20898773951768, (0, 1, 5): 96.50576991748379}
+symm_hs: {'methyl': [[2, 3, 4]], 'amine': []}
+charge: 0
+multiplicity: 1
+qm_scans: {}
+config: demo.ini
+element_dict: {'H': 1, 'B': 5, 'C': 6, 'N': 7, 'P': 15, 'O': 8, 'S': 16, 'F': 9, 'CL': 17, 'BR': 35, 'I': 53}
+home: /home/b6056633/QUBEKit_examples/Demonstration_day/QUBEKit_UNK_CS_2019_07_09_JH
+descriptors: {}
+end: lennard_jones
+config_file: demo.ini
+input: UNK_CS.pdb
+
+~~~~~~~~STARTING PARAMETRISATION~~~~~~~~
+
+--------------------------------------------------
+
+XML.serialise_system began at 2019-07-09 13:44:06.
+
+Docstring for XML.serialise_system:
+     Serialise the input XML system using openmm.
+
+XML.serialise_system finished in 00h:00m:04s.12464 at 2019-07-09 13:44:06.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING PARAMETRISATION OF MOLECULE WITH XML INPUT CM1A/OPLS~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING MM_OPTIMISATION~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING MM_OPTIMISATION OF THE MOLECULE WITH OPENMM~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING QM_OPTIMISATION~~~~~~~~
+
+--------------------------------------------------
+
+Gaussian.generate_input began at 2019-07-09 13:44:07.
+
+Docstring for Gaussian.generate_input:
+     
+        Generates the relevant job file for Gaussian, then executes this job file.
+        :param input_type: The set of coordinates in the molecule that should be used in the job
+        :param optimise: Optimise the geometry of the molecule
+        :param hessian: Calculate the hessian matrix
+        :param energy: Calculate the single point energy
+        :param density: Calculate the electron density
+        :param solvent: Use a solvent when calculating the electron density
+        :param restart: Restart from a check point file
+        :param execute: Run the calculation after writing the input file
+        :param red_mode: If we are doing a redundant mode optimisation this is a list of the atom numbers
+        and the desired value, for a dihedral [[1, 2, 3, 4], 180.0]
+        :return: The exit status of the job if ran, True for normal false for not ran or error
+        
+
+Gaussian.generate_input finished in 00h:00m:05s.14984 at 2019-07-09 13:44:07.
+
+--------------------------------------------------
+
+Gaussian.check_for_errors began at 2019-07-09 13:44:17.
+
+Docstring for Gaussian.check_for_errors:
+     
+        Read the output file and check for normal termination and any errors.
+        :return: A dictionary of the success status and any problems
+        
+
+Gaussian.check_for_errors finished in 00h:00m:00s.00018 at 2019-07-09 13:44:17.
+
+--------------------------------------------------
+
+Gaussian.optimised_structure began at 2019-07-09 13:44:17.
+
+Docstring for Gaussian.optimised_structure:
+     
+        Extract the optimised structure and energy from a fchk file
+        :return molecule: The optimised array with the structure
+        :return energy:  The SCF energy of the optimised structure
+        
+
+Gaussian.optimised_structure finished in 00h:00m:03s.83853 at 2019-07-09 13:44:17.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING QM_OPTIMISATION OF MOLECULE USING GEOMETRIC~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING HESSIAN CALCULATION~~~~~~~~
+
+--------------------------------------------------
+
+Gaussian.generate_input began at 2019-07-09 13:44:17.
+
+Docstring for Gaussian.generate_input:
+     
+        Generates the relevant job file for Gaussian, then executes this job file.
+        :param input_type: The set of coordinates in the molecule that should be used in the job
+        :param optimise: Optimise the geometry of the molecule
+        :param hessian: Calculate the hessian matrix
+        :param energy: Calculate the single point energy
+        :param density: Calculate the electron density
+        :param solvent: Use a solvent when calculating the electron density
+        :param restart: Restart from a check point file
+        :param execute: Run the calculation after writing the input file
+        :param red_mode: If we are doing a redundant mode optimisation this is a list of the atom numbers
+        and the desired value, for a dihedral [[1, 2, 3, 4], 180.0]
+        :return: The exit status of the job if ran, True for normal false for not ran or error
+        
+
+Gaussian.generate_input finished in 00h:00m:04s.91142 at 2019-07-09 13:44:17.
+
+--------------------------------------------------
+
+Gaussian.check_for_errors began at 2019-07-09 13:44:21.
+
+Docstring for Gaussian.check_for_errors:
+     
+        Read the output file and check for normal termination and any errors.
+        :return: A dictionary of the success status and any problems
+        
+
+Gaussian.check_for_errors finished in 00h:00m:00s.00020 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+Gaussian.hessian began at 2019-07-09 13:44:21.
+
+Docstring for Gaussian.hessian:
+     Extract the Hessian matrix from the Gaussian fchk file.
+
+Gaussian.hessian finished in 00h:00m:05s.19752 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING HESSIAN CALCULATION USING G09~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING MOD_SEMINARIO METHOD~~~~~~~~
+
+--------------------------------------------------
+
+ModSeminario.modified_seminario_method began at 2019-07-09 13:44:21.
+
+Docstring for ModSeminario.modified_seminario_method:
+     
+        Calculate the new bond and angle terms after being passed the symmetric Hessian and
+        optimised molecule coordinates.
+        
+
+ModSeminario.modified_seminario_method finished in 00h:00m:05s.53131 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+ModSeminario.calculate_bonds began at 2019-07-09 13:44:21.
+
+Docstring for ModSeminario.calculate_bonds:
+     Uses the modified Seminario method to find the bond parameters and print them to file.
+
+ModSeminario.calculate_bonds finished in 00h:00m:00s.00018 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+ModSeminario.calculate_angles began at 2019-07-09 13:44:21.
+
+Docstring for ModSeminario.calculate_angles:
+     Uses the modified Seminario method to find the angle parameters and prints them to file.
+
+ModSeminario.calculate_angles finished in 00h:00m:00s.00011 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING MOD_SEMINARIO METHOD~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING DENSITY CALCULATION~~~~~~~~
+
+--------------------------------------------------
+
+Gaussian.generate_input began at 2019-07-09 13:44:21.
+
+Docstring for Gaussian.generate_input:
+     
+        Generates the relevant job file for Gaussian, then executes this job file.
+        :param input_type: The set of coordinates in the molecule that should be used in the job
+        :param optimise: Optimise the geometry of the molecule
+        :param hessian: Calculate the hessian matrix
+        :param energy: Calculate the single point energy
+        :param density: Calculate the electron density
+        :param solvent: Use a solvent when calculating the electron density
+        :param restart: Restart from a check point file
+        :param execute: Run the calculation after writing the input file
+        :param red_mode: If we are doing a redundant mode optimisation this is a list of the atom numbers
+        and the desired value, for a dihedral [[1, 2, 3, 4], 180.0]
+        :return: The exit status of the job if ran, True for normal false for not ran or error
+        
+
+Gaussian.generate_input finished in 00h:00m:03s.98159 at 2019-07-09 13:44:21.
+
+--------------------------------------------------
+
+Gaussian.check_for_errors began at 2019-07-09 13:44:28.
+
+Docstring for Gaussian.check_for_errors:
+     
+        Read the output file and check for normal termination and any errors.
+        :return: A dictionary of the success status and any problems
+        
+
+Gaussian.check_for_errors finished in 00h:00m:00s.00022 at 2019-07-09 13:44:28.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING DENSITY CALCULATION~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING CHARGE PARTITIONING~~~~~~~~
+
+--------------------------------------------------
+
+Chargemol.generate_input began at 2019-07-09 13:44:28.
+
+Docstring for Chargemol.generate_input:
+     Given a DDEC version (from the defaults), this function writes the job file for chargemol and executes it.
+
+Chargemol.generate_input finished in 00h:00m:03s.83853 at 2019-07-09 13:44:28.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING CHARGE PARTITIONING WITH CHARGEMOL AND DDEC6~~~~~~~~
+
+--------------------------------------------------
+
+~~~~~~~~STARTING LENNARD-JONES PARAMETER CALCULATION~~~~~~~~
+
+--------------------------------------------------
+
+LennardJones.calculate_non_bonded_force began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.calculate_non_bonded_force:
+     
+        Main worker method for LennardJones class. Extracts necessary parameters from ONETEP or Chargemol files;
+        Calculates the a_i and b_i values;
+        Calculates the sigma and epsilon values using those a_i and b_i values;
+        Redistributes L-J parameters according to polar Hydrogens, then recalculates epsilon values.
+        returns non_bonded_force for the XML creator in Ligand class.
+        
+
+LennardJones.calculate_non_bonded_force finished in 00h:00m:03s.71932 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+LennardJones.extract_params_chargemol began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.extract_params_chargemol:
+     
+        From Chargemol output files, extract the necessary parameters for calculation of L-J.
+        Desired format:
+        ['atom number', 'atom type', 'x', 'y', 'z', 'charge', 'x_dipole', 'y_dipole', 'z_dipole', 'vol']
+        All vals are float except atom number (int) and atom type (str).
+        
+
+LennardJones.extract_params_chargemol finished in 00h:00m:03s.05175 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+LennardJones.append_ais_bis began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.append_ais_bis:
+     
+        Use the AIM parameters from extract_params_*() to calculate a_i and b_i according to paper.
+        Calculations from paper have been combined and simplified for faster computation.
+        
+
+LennardJones.append_ais_bis finished in 00h:00m:03s.45706 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+LennardJones.calculate_sig_eps began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.calculate_sig_eps:
+     
+        Adds the sigma, epsilon terms to the ligand class object as a dictionary.
+        The ligand class object (NonbondedForce) is stored as an empty dictionary until this method is called.
+        first_pass argument prevents the sigmas being recalculated (unlike the epsilons).
+        
+
+LennardJones.calculate_sig_eps finished in 00h:00m:02s.95639 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+LennardJones.correct_polar_hydrogens began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.correct_polar_hydrogens:
+     
+        Identifies the polar Hydrogens and changes the a_i, b_i values accordingly.
+        May be removed / heavily changed if we switch away from atom typing and use SMARTS.
+        
+
+LennardJones.correct_polar_hydrogens finished in 00h:00m:02s.57492 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+LennardJones.apply_symmetrisation began at 2019-07-09 13:45:25.
+
+Docstring for LennardJones.apply_symmetrisation:
+     Using the atoms picked out to be symmetrised apply the symmetry to the charge, sigma and epsilon values
+
+LennardJones.apply_symmetrisation finished in 00h:00m:02s.71797 at 2019-07-09 13:45:25.
+
+--------------------------------------------------
+
+~~~~~~~~FINISHING LENNARD-JONES PARAMETER CALCULATION~~~~~~~~
+
+--------------------------------------------------
+
+
+
+ON COMPLETION, THE LIGAND OBJECTS ARE:
+
+
+theory = B3LYP
+
+basis = 6-31G*
+
+vib_scaling = 0.967
+
+threads = 8
+
+memory = 4
+
+convergence = GAU_TIGHT
+
+iterations = 350
+
+bonds_engine = g09
+
+density_engine = g09
+
+charges_engine = chargemol
+
+ddec_version = 6
+
+geometric = True
+
+solvent = True
+
+dih_start = -165
+
+increment = 15
+
+dih_end = 180
+
+t_weight = infinity
+
+opt_method = BFGS
+
+refinement_method = SP
+
+tor_limit = 20
+
+div_index = 0
+
+parameter_engine = XML input CM1A/OPLS
+
+l_pen = 0.0
+
+mm_opt_method = openmm
+
+excited_state = False
+
+excited_theory = TDA
+
+nstates = 3
+
+excited_root = 1
+
+use_pseudo = False
+
+pseudo_potential_block = 
+
+chargemol = /home/b6056633/chargemol_09_26_2017
+
+log = JH
+
+filename = UNK_CS.pdb
+
+name = UNK_CS
+
+smiles = None
+
+coords = {'qm': array([[-1.16464624e+00,  1.95175358e-02,  0.00000000e+00],
+       [ 6.67566911e-01, -8.71445844e-02,  0.00000000e+00],
+       [-1.53542452e+00,  5.22658176e-01, -8.95458645e-01],
+       [-1.53542460e+00,  5.22654634e-01,  8.95460592e-01],
+       [-1.53027310e+00, -1.00961194e+00, -1.97290000e-06],
+       [ 9.07929096e-01,  1.24150726e+00,  1.23300000e-07]]), 'mm': array([[ 9.98444826e-01,  9.99045112e-01, -9.83907700e-04],
+       [-8.13578266e-01,  9.96409058e-01, -2.23876220e-03],
+       [ 1.38094203e+00,  1.00204124e+00, -1.02191421e+00],
+       [ 1.38118408e+00,  1.16389507e-01,  5.11890212e-01],
+       [ 1.37376149e+00,  1.88559347e+00,  5.10828259e-01],
+       [-9.67754158e-01, -1.53478389e-01, -6.66581590e-01]]), 'input': array([[ 1.   ,  1.   ,  0.   ],
+       [-0.804,  1.   ,  0.   ],
+       [ 1.371,  1.   , -1.028],
+       [ 1.371,  0.109,  0.513],
+       [ 1.371,  1.891,  0.513],
+       [-0.956, -0.154, -0.667]]), 'temp': [], 'traj': [array([[ 1.   ,  1.   ,  0.   ],
+       [-0.804,  1.   ,  0.   ],
+       [ 1.371,  1.   , -1.028],
+       [ 1.371,  0.109,  0.513],
+       [ 1.371,  1.891,  0.513],
+       [-0.956, -0.154, -0.667]]), array([[ 9.99358275e-01,  9.99337345e-01, -6.32913600e-04],
+       [-8.10770723e-01,  9.96942554e-01, -1.85023710e-03],
+       [ 1.37813315e+00,  1.00137783e+00, -1.02330973e+00],
+       [ 1.37833411e+00,  1.14478080e-01,  5.11981475e-01],
+       [ 1.37267863e+00,  1.88706642e+00,  5.11320128e-01],
+       [-9.64733447e-01, -1.53202224e-01, -6.66508722e-01]]), array([[ 9.98619302e-01,  9.99081743e-01, -9.29749600e-04],
+       [-8.13435172e-01,  9.96353650e-01, -2.24632690e-03],
+       [ 1.38077724e+00,  1.00196657e+00, -1.02192012e+00],
+       [ 1.38103770e+00,  1.16308809e-01,  5.11841509e-01],
+       [ 1.37366501e+00,  1.88569610e+00,  5.10831278e-01],
+       [-9.67664083e-01, -1.53406877e-01, -6.66576592e-01]]), array([[ 9.98444826e-01,  9.99045112e-01, -9.83907700e-04],
+       [-8.13578266e-01,  9.96409058e-01, -2.23876220e-03],
+       [ 1.38094203e+00,  1.00204124e+00, -1.02191421e+00],
+       [ 1.38118408e+00,  1.16389507e-01,  5.11890212e-01],
+       [ 1.37376149e+00,  1.88559347e+00,  5.10828259e-01],
+       [-9.67754158e-01, -1.53478389e-01, -6.66581590e-01]])]}
+
+topology = 
+
+angles = [(1, 0, 2), (1, 0, 3), (1, 0, 4), (2, 0, 3), (2, 0, 4), (3, 0, 4), (0, 1, 5)]
+
+dihedrals = {(0, 1): [(2, 0, 1, 5), (3, 0, 1, 5), (4, 0, 1, 5)]}
+
+improper_torsions = None
+
+rotatable = None
+
+bond_lengths = {(0, 2): 1.092004220679909, (0, 3): 1.0920042137478192, (0, 4): 1.092149476536744, (0, 1): 1.8353151888020036, (1, 5): 1.3502183955868163}
+
+atoms = [Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 6, 'name': 'C00', 'atom_index': 0, 'mass': 12.011, 'partial_charge': '-0.021450825072964644', 'formal_charge': 0, 'type': 'C', 'bonds': [1, 2, 3, 4], 'element': 'C'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 16, 'name': 'S01', 'atom_index': 1, 'mass': 32.06, 'partial_charge': '-0.18280375938994023', 'formal_charge': 0, 'type': 'S', 'bonds': [0, 5], 'element': 'S'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H02', 'atom_index': 2, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H03', 'atom_index': 3, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H04', 'atom_index': 4, 'mass': 1.008, 'partial_charge': '0.034113353639708639', 'formal_charge': 0, 'type': '[H]', 'bonds': [0], 'element': 'H'}), Atom({'mass_dict': {1: 1.008, 5: 10.811, 6: 12.011, 7: 14.007, 15: 30.973762, 8: 15.999, 16: 32.06, 9: 18.998403, 17: 35.45, 35: 79.904, 53: 126.90447}, 'element_dict': {1: 'H', 5: 'B', 6: 'C', 7: 'N', 15: 'P', 8: 'O', 16: 'S', 9: 'F', 17: 'Cl', 35: 'Br', 53: 'I'}, 'atomic_number': 1, 'name': 'H05', 'atom_index': 5, 'mass': 1.008, 'partial_charge': '0.10191452354377903', 'formal_charge': 0, 'type': '[H]', 'bonds': [1], 'element': 'H'})]
+
+dih_phis = {(2, 0, 1, 5): 59.972534328232435, (3, 0, 1, 5): -59.95897751227536, (4, 0, 1, 5): 179.90404616874022}
+
+angle_values = {(1, 0, 2): 109.84425679645605, (1, 0, 3): 109.84195471596814, (1, 0, 4): 109.84195471596814, (2, 0, 3): 109.0412446681842, (2, 0, 4): 109.0412446681842, (3, 0, 4): 109.20898773951768, (0, 1, 5): 96.50576991748379}
+
+symm_hs = {'methyl': [[2, 3, 4]], 'amine': []}
+
+qm_energy = -438.6983484443433
+
+charge = 0
+
+multiplicity = 1
+
+qm_scans = {}
+
+scan_order = None
+
+xml_tree = <xml.etree.ElementTree.ElementTree object at 0x149b4a30dac8>
+
+AtomTypes = {0: ['C00', 'QUBE_0', 'C0'], 1: ['S01', 'QUBE_1', 'S1'], 2: ['H02', 'QUBE_2', 'H2'], 3: ['H03', 'QUBE_3', 'H3'], 4: ['H04', 'QUBE_4', 'H4'], 5: ['H05', 'QUBE_5', 'H5']}
+
+Residues = None
+
+extra_sites = None
+
+HarmonicBondForce = {(0, 1): ['0.18353151888020036', '123586.91857780602'], (0, 2): ['0.1092004220679909', '287952.01875853754'], (0, 3): ['0.10920042137478192', '287952.01828103507'], (0, 4): ['0.10921494765367441', '287700.06475522445'], (1, 5): ['0.13502183955868163', '233267.41979225076']}
+
+HarmonicAngleForce = {(0, 1, 5): ['1.6916182114740703', '556.0290629495037'], (1, 0, 2): ['1.9452267911275518', '285.9116203540589'], (1, 0, 3): ['1.945226674171361', '454.50609109128317'], (1, 0, 4): ['1.8540159344216505', '293.6150898265064'], (2, 0, 3): ['1.922873750428128', '255.30557897748932'], (2, 0, 4): ['1.8970448471506975', '288.00701180058763'], (3, 0, 4): ['1.8970447227099179', '288.00695957352195']}
+
+PeriodicTorsionForce = OrderedDict([((2, 0, 1, 5), [['1', '0', '0'], ['2', '0', '3.141592653589793'], ['3', '1.00416', '0'], ['4', '0', '3.141592653589793']]), ((3, 0, 1, 5), [['1', '0', '0'], ['2', '0', '3.141592653589793'], ['3', '1.00416', '0'], ['4', '0', '3.141592653589793']]), ((4, 0, 1, 5), [['1', '0', '0'], ['2', '0', '3.141592653589793'], ['3', '1.00416', '0'], ['4', '0', '3.141592653589793']])])
+
+NonbondedForce = {0: ['-0.314951', '0.35689645886272997', '0.25918706950299236'], 1: ['-0.227078', '0.35489282445083203', '1.183525909515302'], 2: ['0.13445133333333334', '0.2185504234640742', '0.1504726927327372'], 3: ['0.13445133333333334', '0.2185504234640742', '0.1504726927327372'], 4: ['0.13445133333333334', '0.2185504234640742', '0.1504726927327372'], 5: ['0.138676', '0', '0']}
+
+combination = opls
+
+sites = None
+
+state = finalise
+
+config = demo.ini
+
+element_dict = {'H': 1, 'B': 5, 'C': 6, 'N': 7, 'P': 15, 'O': 8, 'S': 16, 'F': 9, 'CL': 17, 'BR': 35, 'I': 53}
+
+hessian = [[ 7.94217848e+02 -7.32007645e+00 -4.74016200e-05 -3.00136396e+02
+   7.72916377e+00  5.55845713e-05 -1.56553364e+02  9.36709453e+01
+  -1.60615111e+02 -1.56553362e+02  9.36703042e+01  1.60615504e+02
+  -1.64218820e+02 -1.91632209e+02 -3.81779859e-04 -1.67559069e+01
+   3.88187195e+00 -1.99037534e-05]
+ [-7.32007645e+00  1.28200603e+03 -6.83710067e-05  7.84563158e+01
+  -1.23887567e+02  3.41557009e-05  9.59870167e+01 -2.47185818e+02
+   2.35375736e+02  9.59863451e+01 -2.47183999e+02 -2.35374572e+02
+  -1.96762018e+02 -6.67988690e+02 -1.09010049e-03 -6.63475832e+01
+   4.24003901e+00 -3.94432615e-05]
+ [-4.74016200e-05 -6.83710067e-05  1.25859723e+03  7.91864826e-05
+  -2.14428607e-05 -7.25231826e+01 -1.75295656e+02  2.33055924e+02
+  -5.39229412e+02  1.75296063e+02 -2.33054751e+02 -5.39231242e+02
+  -3.97763038e-04 -1.07763126e-03 -1.10632060e+02 -4.10285837e-05
+  -3.36427371e-06  3.01866420e+00]
+ [-3.00136396e+02  7.84563158e+01  7.91864826e-05  4.87039720e+02
+   2.50229566e+01 -7.10566167e-05 -4.99720814e+01 -4.29874111e+00
+   3.85281931e+00 -4.99721040e+01 -4.29869453e+00 -3.85284579e+00
+  -2.52824888e+01  1.05941745e+00  4.85397956e-06 -6.16766504e+01
+  -9.59412542e+01  1.35131312e-05]
+ [ 7.72916377e+00 -1.23887567e+02 -2.14428607e-05  2.50229566e+01
+   6.97336641e+02  4.93073694e-05  2.80573535e+01  3.64289918e+00
+  -5.55549946e+00  2.80571936e+01  3.64289160e+00  5.55547069e+00
+  -5.88336605e+01  8.85194852e+00  3.17069296e-05 -3.00330070e+01
+  -5.89586814e+02 -3.07963482e-05]
+ [ 5.55845713e-05  3.41557009e-05 -7.25231826e+01 -7.10566167e-05
+   4.93073694e-05  4.98461593e+01 -3.97965191e+01 -1.77930738e+00
+   1.39494276e+01  3.97966040e+01  1.77926112e+00  1.39494889e+01
+  -7.53035390e-05  1.57792710e-05 -4.02704991e-01  5.87125025e-06
+  -5.29734583e-05 -4.81918830e+00]
+ [-1.56553364e+02  9.59870167e+01 -1.75295656e+02 -4.99720814e+01
+   2.80573535e+01 -3.97965191e+01  1.79928428e+02 -9.99004196e+01
+   1.72967931e+02  1.14763577e+01 -1.36903989e+01  1.80915131e+01
+   1.07196768e+01 -9.85984463e+00  2.33328949e+01  4.40098315e+00
+  -5.93707049e-01  6.99835745e-01]
+ [ 9.36709453e+01 -2.47185818e+02  2.33055924e+02 -4.29874111e+00
+   3.64289918e+00 -1.77930738e+00 -9.99004196e+01  2.51208010e+02
+  -2.56961078e+02 -1.36903239e+01  1.96189723e+01 -3.04777233e+01
+   2.41839504e+01 -2.81944891e+01  5.84253359e+01  3.45888560e-02
+   9.10425442e-01 -2.26315079e+00]
+ [-1.60615111e+02  2.35375736e+02 -5.39229412e+02  3.85281931e+00
+  -5.55549946e+00  1.39494276e+01  1.72967931e+02 -2.56961078e+02
+   5.67087736e+02 -1.80915653e+01  3.04779778e+01 -4.43107468e+01
+   2.73336035e+00 -2.76304323e+00  3.19161224e+00 -8.47435226e-01
+  -5.74093854e-01 -6.88617055e-01]
+ [-1.56553362e+02  9.59863451e+01  1.75296063e+02 -4.99721040e+01
+   2.80571936e+01  3.97966040e+01  1.14763577e+01 -1.36903239e+01
+  -1.80915653e+01  1.79928471e+02 -9.98997552e+01 -1.72968348e+02
+   1.07196822e+01 -9.85975428e+00 -2.33329256e+01  4.40095555e+00
+  -5.93705365e-01 -6.99827803e-01]
+ [ 9.36703042e+01 -2.47183999e+02 -2.33054751e+02 -4.29869453e+00
+   3.64289160e+00  1.77926112e+00 -1.36903989e+01  1.96189723e+01
+   3.04779778e+01 -9.98997552e+01  2.51206014e+02  2.56959823e+02
+   2.41839576e+01 -2.81942902e+01 -5.84254709e+01  3.45869787e-02
+   9.10409562e-01  2.26316265e+00]
+ [ 1.60615504e+02 -2.35374572e+02 -5.39231242e+02 -3.85284579e+00
+   5.55547069e+00  1.39494889e+01  1.80915131e+01 -3.04777233e+01
+  -4.43107468e+01 -1.72968348e+02  2.56959823e+02  5.67089732e+02
+  -2.73326020e+00  2.76291032e+00  3.19138803e+00  8.47437172e-01
+   5.74093269e-01 -6.88621914e-01]
+ [-1.64218820e+02 -1.96762018e+02 -3.97763038e-04 -2.52824888e+01
+  -5.88336605e+01 -7.53035390e-05  1.07196768e+01  2.41839504e+01
+   2.73336035e+00  1.07196822e+01  2.41839576e+01 -2.73326020e+00
+   1.85450920e+02  2.05993208e+02  3.90896723e-04 -1.73889701e+01
+   1.23456254e+00 -1.79676386e-05]
+ [-1.91632209e+02 -6.67988690e+02 -1.07763126e-03  1.05941745e+00
+   8.85194852e+00  1.57792710e-05 -9.85984463e+00 -2.81944891e+01
+  -2.76304323e+00 -9.85975428e+00 -2.81942902e+01  2.76291032e+00
+   2.05993208e+02  7.12337605e+02  1.18851429e-03  4.29918230e+00
+   3.18791366e+00  6.24778002e-06]
+ [-3.81779859e-04 -1.09010049e-03 -1.10632060e+02  4.85397956e-06
+   3.17069296e-05 -4.02704991e-01  2.33328949e+01  5.84253359e+01
+   3.19161224e+00 -2.33329256e+01 -5.84254709e+01  3.19138803e+00
+   3.90896723e-04  1.18851429e-03  1.04822977e+02  1.68204527e-05
+   4.85372479e-06 -1.71213071e-01]
+ [-1.67559069e+01 -6.63475832e+01 -4.10285837e-05 -6.16766504e+01
+  -3.00330070e+01  5.87125025e-06  4.40098315e+00  3.45888560e-02
+  -8.47435226e-01  4.40095555e+00  3.45869787e-02  8.47437172e-01
+  -1.73889701e+01  4.29918230e+00  1.68204527e-05  8.70195888e+01
+   9.20122320e+01  1.63892223e-05]
+ [ 3.88187195e+00  4.24003901e+00 -3.36427371e-06 -9.59412542e+01
+  -5.89586814e+02 -5.29734583e-05 -5.93707049e-01  9.10425442e-01
+  -5.74093854e-01 -5.93705365e-01  9.10409562e-01  5.74093269e-01
+   1.23456254e+00  3.18791366e+00  4.85372479e-06  9.20122320e+01
+   5.80338026e+02  5.20690953e-05]
+ [-1.99037534e-05 -3.94432615e-05  3.01866420e+00  1.35131312e-05
+  -3.07963482e-05 -4.81918830e+00  6.99835745e-01 -2.26315079e+00
+  -6.88617055e-01 -6.99827803e-01  2.26316265e+00 -6.88621914e-01
+  -1.79676386e-05  6.24778002e-06 -1.71213071e-01  1.63892223e-05
+   5.20690953e-05  3.34897614e+00]]
+
+modes = None
+
+home = /home/b6056633/QUBEKit_examples/Demonstration_day/QUBEKit_UNK_CS_2019_07_09_JH
+
+descriptors = {'Heavy atoms': 2, 'H-bond donors': 1, 'H-bond acceptors': 1, 'Molecular weight': 48.110000000000014, 'LogP': 0.546}
+
+constraints_file = None
+
+restart = None
+
+end = lennard_jones
+
+skip = None
+
+config_file = demo.ini
+
+input = UNK_CS.pdb

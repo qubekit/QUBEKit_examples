@@ -1,0 +1,15 @@
+REMARK   1 CREATED WITH QUBEKit 2019-07-09 13:44:06.381516
+COMPND    UNK_CS              
+HETATM    1 C00  UNL     1       1.000   1.000   0.000  1.00  0.00           C
+HETATM    2 S01  UNL     1      -0.804   1.000   0.000  1.00  0.00           S
+HETATM    3 H02  UNL     1       1.371   1.000  -1.028  1.00  0.00           H
+HETATM    4 H03  UNL     1       1.371   0.109   0.513  1.00  0.00           H
+HETATM    5 H04  UNL     1       1.371   1.891   0.513  1.00  0.00           H
+HETATM    6 H05  UNL     1      -0.956  -0.154  -0.667  1.00  0.00           H
+CONECT    1    2    3    4    5
+CONECT    2    1    6
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1
+CONECT    6    2
+END
