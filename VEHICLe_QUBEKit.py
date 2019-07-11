@@ -30,7 +30,7 @@ hessian = np.array(hessian).reshape(int(len(hessian) ** 0.5), -1) * 627.509391 /
 # Extract optimised structure
 opt_struct = client.query_procedures(id=opt_record)[0].get_final_molecule()
 
-# Initialise Ligand object using the smiles string
+# Initialise Ligand object using the json dict from qcengine
 mol = Ligand(opt_struct.json_dict(), name='initial_test')
 
 # Set the qm coords to the input coords from qcengine
