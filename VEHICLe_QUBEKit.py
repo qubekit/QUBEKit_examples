@@ -2,7 +2,8 @@ import qcportal as ptl
 import numpy as np
 
 from QUBEKit.ligand import Ligand
-from QUBEKit.engines.rdkit import RDKit
+from QUBEKit.mod_seminario import ModSeminario
+from QUBEKit.parametrisation.base_parametrisation import Parametrisation
 
 
 # Cache VEHICLe dataset
@@ -27,15 +28,23 @@ hessian = client.query_results(molecule=optimisation.final_molecule, driver="hes
 hessian = np.array(hessian).reshape(int(len(hessian) ** 0.5), -1) * 627.509391 / (0.529 ** 2)
 
 # Extract optimised structure
-opt_struct = client.query_results(molecule=optimisation.final_molecule, driver='gradient')[0].return_result
-# Reshape optimised structure
-opt_struct = np.array(opt_struct).reshape((len(opt_struct) // 3, 3)) * 0.529
+opt_struct = client.query_procedures(id=opt_record)[0].get_final_molecule()
 
 # Initialise Ligand object using the smiles string
-mol = Ligand(RDKit().smiles_to_pdb(smiles))
+mol = Ligand(opt_struct.json_dict(), name='initial_test')
+
+# Set the qm coords to the input coords from qcengine
+mol.coords['qm'] = mol.coords['input']
 
 # Insert hessian and optimised coordinates
 mol.hessian = hessian
-mol.coords['qm'] = opt_struct
+mol.parameter_engine = 'none'
 
-mol.write_pdb(input_type='qm', name='test')
+# Create empty parameter dicts
+Parametrisation(mol).gather_parameters()
+
+# Get Mod Sem angle and bond params
+ModSeminario(mol).modified_seminario_method()
+
+# Write out final xml
+mol.write_parameters()
