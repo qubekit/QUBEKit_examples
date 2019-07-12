@@ -1,9 +1,10 @@
-import qcportal as ptl
-import numpy as np
-
 from QUBEKit.ligand import Ligand
 from QUBEKit.mod_seminario import ModSeminario
 from QUBEKit.parametrisation.base_parametrisation import Parametrisation
+from QUBEKit.utils import constants
+
+import numpy as np
+import qcportal as ptl
 
 
 # Cache VEHICLe dataset
@@ -13,38 +14,54 @@ ds = client.get_collection('OptimizationDataset', 'OpenFF VEHICLe Set 1')
 ds.df.head()
 ds.list_specifications()
 
-# Abstracted out for later use in a loop
-smiles = 'c1cc[nH]c1'
+# Cache records
+records = ds.data.records
 
-# Specific ID of given smiles string
-opt_record = ds.get_entry(f'{smiles}-0').object_map['default']
+for item in records:
+    smiles = item.strip('\n')
 
-# Optimisation of molecule at ID: opt_record
-optimisation = client.query_procedures(id=opt_record)[0]
+    # Specific ID of given smiles string
+    try:
+        opt_record = ds.get_entry(smiles).object_map['default']
+    except KeyError:
+        continue
 
-# Extract hessian
-hessian = client.query_results(molecule=optimisation.final_molecule, driver="hessian")[0].return_result
-# Reshape hessian
-hessian = np.array(hessian).reshape(int(len(hessian) ** 0.5), -1) * 627.509391 / (0.529 ** 2)
+    # Optimisation of molecule at ID: opt_record
+    optimisation = client.query_procedures(id=opt_record)[0]
 
-# Extract optimised structure
-opt_struct = client.query_procedures(id=opt_record)[0].get_final_molecule()
+    # Extract hessian
+    try:
+        hessian = client.query_results(molecule=optimisation.final_molecule, driver="hessian")[0].return_result
+    except IndexError:
+        # Molecule has been optimised but no hessian has been calculated yet
+        continue
 
-# Initialise Ligand object using the json dict from qcengine
-mol = Ligand(opt_struct.json_dict(), name='initial_test')
+    # Reshape hessian
+    conversion = constants.HA_TO_KCAL_P_MOL / (constants.BOHR_TO_ANGS ** 2)
+    hessian = np.array(hessian).reshape(int(len(hessian) ** 0.5), -1) * conversion
 
-# Set the qm coords to the input coords from qcengine
-mol.coords['qm'] = mol.coords['input']
+    # Extract optimised structure
+    opt_struct = client.query_procedures(id=opt_record)[0].get_final_molecule()
 
-# Insert hessian and optimised coordinates
-mol.hessian = hessian
-mol.parameter_engine = 'none'
+    # Initialise Ligand object using the json dict from qcengine
+    mol = Ligand(opt_struct.json_dict(), name='initial_test')
 
-# Create empty parameter dicts
-Parametrisation(mol).gather_parameters()
+    # Set the qm coords to the input coords from qcengine
+    mol.coords['qm'] = mol.coords['input']
 
-# Get Mod Sem angle and bond params
-ModSeminario(mol).modified_seminario_method()
+    # Insert hessian and optimised coordinates
+    mol.hessian = hessian
+    mol.parameter_engine = 'none'
 
-# Write out final xml
-mol.write_parameters()
+    # Create empty parameter dicts
+    Parametrisation(mol).gather_parameters()
+
+    print(item)
+
+    with open('Modified_Seminario_Bonds.txt', 'a+') as bonds_file, \
+            open('Modified_Seminario_Angles.txt', 'a+') as angles_file:
+        bonds_file.write(f'\n\n{smiles}\n\n')
+        angles_file.write(f'\n\n{smiles}\n\n')
+
+    # Get Mod Sem angle and bond params
+    ModSeminario(mol).modified_seminario_method()
